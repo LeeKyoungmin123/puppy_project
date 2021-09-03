@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .title {
+            width: 80%;
+            height: 150px;
+            margin: 0 auto;
+            padding-top: 30px;
+            text-align: center;
+            line-height: 40px;
+        }
+
+        .mainBody {
+            width: 70%;
+            margin: 0 auto;
+        }
+
+        .left,
+        .right {
+            width: 49%;
+        }
+
+        .left {
+            float: left;
+        }
+
+        .right {
+            float: left;
+            padding-left: 20px;
+            
+        }
+
+        .list-group-item {
+            border-bottom: 1px gray solid;
+            padding: 1em;       
+        }
+
+        .info {
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            margin: 0 auto;
+            padding-left: 0;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        h4 {
+            font-weight: bold;
+            font-size: 1.5rem;
+            padding-bottom: 0.5em;
+            padding-top: 2em;
+        }
+
+        ul,
+        li {
+            list-style: none;
+            padding: 0;
+        }
+
+
+
+        .list-group {
+            border: 1px gray solid;
+            margin: 0;
+            width: 90%;
+        }
+
+
+        .list-group-item {
+            border-bottom: 1px gray solid;
+            padding: 1em;
+        }
+
+        .list-group-item:last-child {
+            border-bottom: none;
+        }
+
+        .all {
+            width: 70%;
+            margin: 0 auto;
+        }
+
+        img {
+            padding-top: 3.5em;
+        }
+
+        .img_block {
+            float: left;
+        }
+
+        .info_block {
+            float: left;
+            margin-left: 10px;
+            width: 75%;
+        }
+
+        .clearfix::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        .taxi {
+            display: inline-block;
+        }
+
+        .reservation {
+            font-size: smaller;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="title">
+        <h2><u>멍멍택시 픽업 서비스</u></h2>
+        <p>바우라움 회원님들에게는 저렴한 가격으로 제공됩니다.</p>
+    </div>
+
+    <div class="mainBody">
+        <div class="left">
+            <ul>
+                <li class="info clearfix">
+                    <div class="img_block">
+                        <img src="#" alt="수화기">
+                    </div>
+                    <div class="info_block">
+                        <h4>픽업 제휴업체</h4>
+                        <p>멍멍택시</p>
+                    </div>
+                </li>
+                <li class="info clearfix">
+                    <div class="img_block">
+                        <img src="#" alt="시계">
+                    </div>
+                    <div class="info_block">
+                        <h4>예약 안내</h4>
+                        <p>100% 예약제로 운영됩니다.</p>
+                    </div>
+                </li>
+            </ul>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    문의방법
+                    <br>
+                    <img str="#" alt="수화기">
+                    &nbsp;예약문의 1234-5678"
+                    <br>
+                    <img str="#" alt="플러스친구">
+                    멍멍택시" 플러스친구로 예약가능
+                    <br>
+                    <img str="#" alt="이메일">
+                    문자문의 010-1234-5678
+                    <br>
+                </li>
+                <li style="line-height: 2em;"class="list-group-item">
+                    예약 진행시, 아래 항목들을 알려주시기 바랍니다.
+                    <br>
+                    <div style="line-height: 1.5em;" class="reservation">
+                        예약날짜 및 시간 출발지 및 도착지 주소 <br>
+                        반려견 종류 반려견 수 <br>
+                        보호자 동반 여부 편도 혹은 왕복 여부 <br>
+                        보호자 휴대폰 번호 기타 요청사항 <br>
+                    </div>
+                </li>
+                
+            </ul>
+        </div>
+
+        <div class="right">
+            <ul>
+                <li class="info clearfix">
+                    <div class="img_block">
+                        <img src="#" alt="돈 아이콘">
+                    </div>
+                    <div class="info_block">
+                        <h4>이동거리요금</h4>
+                        <p style="line-height: 1.5em;">기본요금 7,200원 + 일반택시미터기의 1.1배로 이동거리 및 시간에 따라 택시와 동일한 방식으로 요금이 산정됩니다.</p>
+                    </div>
+                </li>
+            </ul>
+            <ul class="list-group">
+                <li class="list-group-item">목적지와 출발지가 바우라움 서울숲 캠퍼스인 경우에만 할인이 적용됩니다.</li>
+                <li class="list-group-item">요금은 현장에서 현금(계좌이체) 및 카드 결제 가능합니다.</li>
+            </ul>
+            <ul>
+                <li class="info clearfix">
+                    <div class="img_block">
+                        <img src="#" alt="택시아이콘">
+                    </div>
+                    <div class="info_block">
+                        <h4>픽업차량</h4>
+                        <p>픽업차량특징</p>
+                    </div>
+                </li>
+            </ul>
+            <ul class="list-group">
+                <li style="line-height: 1.5em;" class="list-group-item">전문 예약접수 상담원을 통해 보다 편리하게 예약접수가 가능하며, 가까운 거리에 있는 드라이버에게 실시간으로 빠르게 배차를 도와드립니다.
+                </li>
+            </ul>
+            <div class="clearfix">
+                <img src="#" alt="강아지 택시 사진">
+            </div>
+
+
+            <br>
+            <ul>
+                <li class="info clearfix">
+                    <div class="img_block">
+                        <img src="#" alt="메모장아이콘">
+                    </div>
+                    <div class="info_block">
+                        <h4>주의사항</h4>
+                        <p>멍멍택시 이용시 주의사항</p>
+                    </div>
+                </li>
+                
+            </ul>
+            <ul class="list-group">
+                <li style="line-height: 1.5em;" class="list-group-item">예약 시간 3시간 이내에 취소하는 경우 취소 수수료 8,000원이 청구됩니다. <br>
+                    예약 시간 15분 경과 시까지 탑승하지 않는 경우 예약은 자동 취소 될 수 있으며, 15분 이후 대기 시 미터기를 켜고 대기합니다.</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
