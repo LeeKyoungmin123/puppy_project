@@ -4,18 +4,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>professional</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        .comment{
+            width: 70%;
+            padding-top: 50px;
+            font-size: 25px;
+            font-weight: bold;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        .person{
+            width: 1000px;
+            margin: 0 auto;
+            padding-top: 85px;
+        }
+
+        .person img{
+            float: left;
+            width: 450px;
+            height: 450px;
+            padding-top: 20px;
+            padding-right: 50px;
+        }
+
+        .person h3{
+            font-weight: bold;
+            padding-bottom: 10px;
+        }
+        .person table {
+            width: 530px;
+            height: 415px;
+        }
+        table, td, th {
+            border : 1px solid black;
+            border-collapse : collapse;
+        };
+
+
+
+    </style>
+
 </head>
 <body>
-    <div class="professional">
+    <section>
         
-        <div class="comment">
-            “댕댕 유치원은 다년간의 경험과 노하우를 보유한<br>국내 최고의 반려견 전문가들이 함께 합니다.”
-        </div>
-        
-        <div class="p_list">
+        <article class="main-container">
+            <div class="comment">
+                <p>“댕댕 유치원은 다년간의 경험과 노하우를 보유한<br>국내 최고의 반려견 전문가들이 함께 합니다.”</p>
+            </div>
+        </article>
+        <article class="main-container">
         
             <div class="person">
                 <img src="./img/angry.jpg" alt="doctor1">
@@ -111,17 +153,11 @@
                     <tr>   
                         <td>&nbsp;&nbsp;성남시/안양시 반려동물 문화교실 - 동반학교 강의</td>
                     </tr>
-                </table>
-                <br><br><br>
-                
+                </table>                
             </div>
         </div>
-    </div>
+        </article>
+    </section>  
 
-
-    
-</div>  
-    <script src="/js/jquery-3.6.0.min.js"></script>
-    <script src="/js/bootstrap.js"></script>
 </body>
 </html>

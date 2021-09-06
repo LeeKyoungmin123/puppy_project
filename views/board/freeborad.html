@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .freeboard-title {
+            font-size: 22px;
+        }
+
+        .freeboard-sort {
+            width: 70%;
+            text-align: right;
+            margin: 100px auto 0;
+        }
+
+        .freeboard-list {
+            width: 70%;
+            margin: 20px auto 0;
+        }
+
+        .freeboard-table {
+            width: 100%;
+            
+        }
+        .freeboard-table td, .freeboard-table th{
+            padding: 20px;
+        }
+
+        .freeboard-paging {
+            margin: 0 auto;
+
+        }
+
+        .freeboard-page {
+            display: inline;
+        }
+      
+        .freeboard-write-btn{
+            margin: 20px;
+            float: right;
+        }
+        .freeboard-search{
+            margin-top: 50px;
+        }
+        .freeboard-search select{
+            height: 25px;
+        }
+        .freeboard-search input{
+            width: 300px;
+            height: 25px;
+            margin: auto 20px;
+        }
+        .freeboard-write-btn{
+            padding: 7px;
+        }
+        .freeboard-btn{
+            padding: 5px;
+        }
+        
+    </style>
+
+</head>
+
+<body>
+
+    <section>
+
+        <article class="">
+            <div class="freeboard-title">
+                <h2>자유게시판</h2>
+            </div>
+
+            <!-- 정렬 기준 OR 게시물 개수-->
+            <div class="freeboard-sort">
+                <select name="viewConunt">
+                    <option value="">10개씩</option>
+                    <option value="">15개씩</option>
+                    <option value="">20개씩</option>
+                </select>
+            </div>
+
+            <div class="freeboard-list ">
+                <table class="freeboard-table">
+                    <thead>
+                        <tr>
+                            <th>글번호</th>
+                            <th>제목</th>
+                            <th>작성자</th>
+                            <th>작성일</th>
+                            <th>조회</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr>
+                            <td>1</td>
+                            <td>테스트</td>
+                            <td>테스트</td>
+                            <td>2021-09-06</td>
+                            <td>3216</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>테스트</td>
+                            <td>테스트</td>
+                            <td>2021-09-06</td>
+                            <td>3216</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>테스트</td>
+                            <td>테스트</td>
+                            <td>2021-09-06</td>
+                            <td>3216</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>테스트</td>
+                            <td>테스트</td>
+                            <td>2021-09-06</td>
+                            <td>3216</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="freeboard-write clearfix">
+                    <button class="freeboard-write-btn">글쓰기</button>
+                </div>
+
+                <!-- 페이징 공간-->
+                <div class="freeboard-paging">
+
+                    <button class="freeboard-btn"> 이전 </button>
+                    <a href="#">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#">6</a>
+                    <a href="#">7</a>
+                    <a href="#">8</a>
+                    <a href="#">9</a>
+                    <a href="#">10</a>
+                    <button class="freeboard-btn"> 다음 </button>
+
+                </div>
+
+            </div>
+
+            <div class="freeboard-search">
+                <form action="#">
+                    <select name="condision">
+                        <option value="title">제목</option>
+                        <option value="content">내용</option>
+                        <option value="writer">작성자</option>
+                        <option value="titleContent">제목+내용</option>
+                    </select>
+
+                    <input type="text" name="keyword">
+
+                    <button type="submit" class="freeboard-btn">검색</button>
+
+                </form>
+            </div>
+
+        </article>
+
+    </section>
+
+</body>
+
+</html>

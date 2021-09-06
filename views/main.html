@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>main</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <style>
 
         /* 디자인 시작 시 기본적으로 선언하는 문법 */
@@ -77,26 +78,30 @@
         
         section{
             margin-top: 290px;
-            text-align: center;
+            width: 100%;
+        }
+        .main-container {
+            width: 100%;
         }
 
         #main-menu {
-
-            width: 100%;
+            width: 70%;
             margin: 50px auto;
+            text-align: center;
         }
         #main-menu h2 {
             padding: 50px;
             font-size: 35px;
             color: #996633;
+            text-align: center;
         }
         #main-menu ul{
             width: 100%;
         }
         #main-menu li {
             display: inline-block;
-            width: 150px;
-            margin: 40px;
+            width: 145px;
+            margin: 30px;
         }
 
         #main-menu li a{
@@ -233,7 +238,7 @@
                 </div>
             </div>
             <div class="logo">
-                    <a href="/" target="_blank"><img src="../img/logo.png" alt="댕댕이 유치원"></a>
+                    <a href="/" target="_blank"><img src="./img/logo.png" alt="댕댕이 유치원"></a>
             </div>
             <nav>
                 <div class="menu_area">
@@ -295,7 +300,7 @@
     <!-- 바디 영역 -->
     
     <section>
-        <div class="slide">
+        <article class="main-container">
             <ul class="cnt">
                 <li><img src="./img/ex1.png" alt="ex1"></li>
             </ul>
@@ -303,97 +308,102 @@
                 <button type="button" class="prev">&#10094;</button>
                 <button type="button" class="next">&#10095;</button>
             </div>
-        </div>
-        <div id="main-menu">
-            <h2>Best World For My Dog</h2>
-            <ul class="clearfix">
-                <li>
-                    <a href="#">
-                        <img src="./img/hotel.png" alt="호텔&데이커어">
-                        <h3>호텔 & 데이커어</h3>
-                        <p>HOTEL & DAYCARE</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="./img/kindergarten.png" alt="유치원">
-                        <h3>유치원</h3>
-                        <p>KINDERGARTEN</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="./img/grooming.png" alt="그루밍">
-                        <h3>그루밍 & 스파</h3>
-                        <p>GROOMING & SPA</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="./img/studio.png" alt="스튜디오">
-                        <h3>스튜디오</h3>
-                        <p>STUDIO</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="./img/medical.png" alt="메디컬센터">
-                        <h3>메디컬센터</h3>
-                        <p>MEDICAL CENTER</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="./img/specialcare.png" alt="스페셜케어">
-                        <h3>스페셜케어</h3>
-                        <p>SPECIAL CARE</p>
-                    </a>
-                </li>
-            </ul>           
-        </div>
-        <div id="main-products">
-            <h2>Best Products</h2>
-            <ul>
-                <li>
-                    <a href="#">
-                        <img src="./img/best1.PNG" alt="유기농 개껌">
-                        <h4 class="align p-title">푸르미 강아지 화장실 그물망<br>애견 배변판</h4>
-                        <p class="align p-price">7,400원</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="./img/best2.PNG" alt="강아지 방한신발">
-                        <h4 class="align p-title">푸르미 강아지 울타리<br>애견 매직펜스 소형12P</h4>
-                        <p class="align p-price">14,500원</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="./img/best3.PNG" alt="개빗">
-                        <h4 class="align p-title">푸리미 이동장 강아지 <br>켄넬 케이지 캐리어</h4>
-                        <p class="align p-price">15,600원</p>
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <div id="main-reviews">
-            <h2>Reviews</h2>
-            <table>
-                <tr>
-                    <td><img src="#" alt=""></td>
-                    <td>abc123</td>
-                    <td>유치원 시설이 좋아요~</td>
-                </tr>
-                <tr>
-                    <td><img src="#" alt=""></td>
-                    <td>def456</td>
-                    <td>메디컬센터 다녀오고 애가 다 나았어요~</td>
-                </tr>
+        </article>
+        <article class="main-container">
+            <div id="main-menu">
+                <h2>Best World For My Dog</h2>
+                <ul class="clearfix">
+                    <li>
+                        <a href="#">
+                            <img src="./img/hotel.png" alt="호텔&데이커어">
+                            <h3>호텔 & 데이커어</h3>
+                            <p>HOTEL & DAYCARE</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/kindergarten.png" alt="유치원">
+                            <h3>유치원</h3>
+                            <p>KINDERGARTEN</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/grooming.png" alt="그루밍">
+                            <h3>그루밍 & 스파</h3>
+                            <p>GROOMING & SPA</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/studio.png" alt="스튜디오">
+                            <h3>스튜디오</h3>
+                            <p>STUDIO</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/medical.png" alt="메디컬센터">
+                            <h3>메디컬센터</h3>
+                            <p>MEDICAL CENTER</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/specialcare.png" alt="스페셜케어">
+                            <h3>스페셜케어</h3>
+                            <p>SPECIAL CARE</p>
+                        </a>
+                    </li>
+                </ul>           
+            </div>
+        </article>
+        <article class="main-container">
+            <div id="main-products">
+                <h2>Best Products</h2>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="./img/best1.PNG" alt="유기농 개껌">
+                            <h4 class="align p-title">푸르미 강아지 화장실 그물망<br>애견 배변판</h4>
+                            <p class="align p-price">7,400원</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/best2.PNG" alt="강아지 방한신발">
+                            <h4 class="align p-title">푸르미 강아지 울타리<br>애견 매직펜스 소형12P</h4>
+                            <p class="align p-price">14,500원</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/best3.PNG" alt="개빗">
+                            <h4 class="align p-title">푸리미 이동장 강아지 <br>켄넬 케이지 캐리어</h4>
+                            <p class="align p-price">15,600원</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </article>
+        <article class="main-container">
+            <div id="main-reviews">
+                <h2>Reviews</h2>
+                <table>
+                    <tr>
+                        <td><img src="#" alt=""></td>
+                        <td>abc123</td>
+                        <td>유치원 시설이 좋아요~</td>
+                    </tr>
+                    <tr>
+                        <td><img src="#" alt=""></td>
+                        <td>def456</td>
+                        <td>메디컬센터 다녀오고 애가 다 나았어요~</td>
+                    </tr>
 
-            </table>
-
-        </div>
+                </table>
+            </div>
+        </article>
     </section>
 
 
@@ -436,14 +446,27 @@
 
    <script>
 
-    // const $logo = document.querySelector('.logo');
+    const $logo = document.querySelector('.logo');
+    
 
-    // document.addEventListener('scroll',function(){
+    var prevScrollTop = 0;
+    var nowScrollTop = 0;
 
-    //     $logo.style.display ='none';
+    function wheelDelta(){
+        return prevScrollTop - nowScrollTop > 0 ? 'up' : 'down';
+    };
 
-    // });
+    $(window).on('scroll', function(){
+    nowScrollTop = $(this).scrollTop();
+    if(wheelDelta() == 'down'){
+        $logo.style.display ='none';
 
+    }
+    if(nowScrollTop == 0){
+        $logo.style.display ='block';
+    }
+    prevScrollTop = nowScrollTop;
+    });
 
 
 
